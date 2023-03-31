@@ -1,0 +1,162 @@
+@font-face {
+    font-family: sketch;
+    src: url(fonts/Sketch_Block.ttf);
+}
+
+body {
+    background-image: url(img/background.jpg);
+    font-family: sketch;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: rgb(74, 74, 74);
+}
+
+h1 {
+    font-size: 4em;
+    margin-left: 100px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.hangman-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 30%;
+}
+
+.phrase {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 125px;
+}
+
+.hidden {
+    font-size: 2em;
+    padding: 5px;
+    color: rgb(74, 74, 74);
+}
+
+.underscore {
+    visibility: hidden;
+}
+
+.hangman-container > div {
+    border: 8px solid rgb(74, 74, 74);
+    position: absolute;
+}
+
+.bottom {
+    top: 50px;
+    height: 350px;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+}
+
+.top {
+    bottom: 392px;
+    height: 252px;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+}
+
+.left {
+    height: 408px;
+}
+
+.noose {
+    height: 50px;
+    left: 260px;
+}
+
+.head {
+    position: absolute;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    left: 230px;
+    top: 58px;
+}
+
+.torso {
+    position: absolute;
+    height: 90px;
+    left: 260px;
+    top: 125px;
+
+}
+
+.left-leg {
+    position: absolute;
+    height: 45px;
+    left: 260px;
+    top: 220px;
+    transform: rotate(40deg);
+    transform-origin: top;
+}
+
+.right-leg {
+    position: absolute;
+    height: 45px;
+    left: 260px;
+    top: 220px;
+    transform: rotate(-40deg);
+    transform-origin: top;
+}
+
+.left-arm {
+    position: absolute;
+    height: 35px;
+    left: 260px;
+    top: 170px;
+    transform: rotate(90deg);
+    transform-origin: top; 
+}
+
+.right-arm {
+    position: absolute;
+    height: 35px;
+    left: 260px;
+    top: 170px;
+    transform: rotate(-90deg);
+    transform-origin: top; 
+}
+
+.failed-title {
+    font-size: 2em;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.choices > div {
+    font-size: 3em;
+    padding: 15px;
+}
+
+.character:hover {
+    background-color: rgb(255,255,255, .5);
+    border-radius: 10%;
+}
+
+.character:active {
+    background-color: rgb(255,255,255, .7);
+    border-radius: 10%;
+}
